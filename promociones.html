@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todas las promociones</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-siman sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-siman.png" alt="Siman" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="promociones.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#suscripcion">Suscríbete</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero text-center py-5">
+    <div class="container">
+      <h1>Promociones de la semana</h1>
+      <p class="lead">Aprovecha estos precios antes de que se terminen.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Productos en oferta -->
+    <section class="container my-5">
+      <h2 class="titulo-seccion mb-4">Ofertas por categoría</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/moda.svg" class="card-img-top" alt="Moda">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-40%</span>
+              <h3 class="h5 mt-2">Jeans para dama y caballero</h3>
+              <p class="mb-1"><span class="precio-antes">$45.00</span></p>
+              <p class="precio-ahora">$27.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tecnologia.svg" class="card-img-top" alt="Tecnología">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-30%</span>
+              <h3 class="h5 mt-2">Laptop 15 pulgadas</h3>
+              <p class="mb-1"><span class="precio-antes">$799.00</span></p>
+              <p class="precio-ahora">$559.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hogar.svg" class="card-img-top" alt="Hogar">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-25%</span>
+              <h3 class="h5 mt-2">Juego de sala 3 piezas</h3>
+              <p class="mb-1"><span class="precio-antes">$900.00</span></p>
+              <p class="precio-ahora">$675.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/zapatos.svg" class="card-img-top" alt="Zapatos">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-35%</span>
+              <h3 class="h5 mt-2">Tenis deportivos</h3>
+              <p class="mb-1"><span class="precio-antes">$80.00</span></p>
+              <p class="precio-ahora">$52.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/belleza.svg" class="card-img-top" alt="Belleza">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-20%</span>
+              <h3 class="h5 mt-2">Perfumes importados</h3>
+              <p class="mb-1"><span class="precio-antes">$95.00</span></p>
+              <p class="precio-ahora">$76.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/juguetes.svg" class="card-img-top" alt="Juguetes">
+            <div class="card-body">
+              <span class="badge text-bg-danger">-50%</span>
+              <h3 class="h5 mt-2">Juguetes seleccionados</h3>
+              <p class="mb-1"><span class="precio-antes">$30.00</span></p>
+              <p class="precio-ahora">$15.00</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tabla de descuentos con tarjeta -->
+    <section class="container my-5">
+      <h2 class="titulo-seccion mb-4">Descuentos extra con tarjeta</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle table-siman bg-white">
+          <thead>
+            <tr><th>Día</th><th>Categoría</th><th>Descuento extra</th><th>Forma de pago</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Lunes</td><td>Moda</td><td><span class="badge text-bg-danger">15%</span></td><td>Tarjeta Siman</td></tr>
+            <tr><td>Miércoles</td><td>Tecnología</td><td><span class="badge text-bg-warning">10%</span></td><td>Cualquier tarjeta</td></tr>
+            <tr><td>Viernes</td><td>Hogar</td><td><span class="badge text-bg-danger">20%</span></td><td>Tarjeta Siman</td></tr>
+            <tr><td>Domingo</td><td>Belleza</td><td><span class="badge text-bg-info">5%</span></td><td>Efectivo</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-muted">* Promociones válidas en tiendas de San Salvador, Santa Ana y San Miguel.</p>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-2">
+        <a href="#"><i class="bi bi-facebook fs-4 me-3"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-4 me-3"></i></a>
+        <a href="#"><i class="bi bi-tiktok fs-4"></i></a>
+      </p>
+      <p class="mb-0">© 2026 Siman El Salvador - Proyecto de Curso de Frontend Kodigo</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

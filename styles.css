@@ -1,0 +1,144 @@
+/* Paleta de colores */
+:root {
+  --siman-rojo: #c8102e;
+  --siman-rojo-oscuro: #8a0b20;
+  --siman-negro: #1d1d1b;
+  --siman-dorado: #f2b705;
+  --siman-gris: #f5f5f5;
+}
+
+/* Tipografias */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--siman-gris);
+  color: var(--siman-negro);
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar-siman {
+  background-color: var(--siman-rojo);
+}
+
+.navbar-siman .nav-link {
+  color: white;
+}
+
+.navbar-siman .nav-link:hover,
+.navbar-siman .nav-link.active {
+  color: var(--siman-dorado);
+}
+
+/* Hero */
+.hero {
+  background: radial-gradient(circle, var(--siman-rojo), var(--siman-rojo-oscuro));
+  color: white;
+}
+
+/* Botones */
+.btn-siman {
+  --bs-btn-bg: var(--siman-dorado);
+  --bs-btn-border-color: var(--siman-dorado);
+  --bs-btn-color: var(--siman-negro);
+  --bs-btn-hover-bg: #d99f00;
+  --bs-btn-hover-border-color: #d99f00;
+  --bs-btn-hover-color: var(--siman-negro);
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform .2s;
+}
+
+.btn-siman:hover {
+  transform: translateY(-3px);
+}
+
+.btn-rojo {
+  --bs-btn-bg: var(--siman-rojo);
+  --bs-btn-border-color: var(--siman-rojo);
+  --bs-btn-color: white;
+  --bs-btn-hover-bg: var(--siman-rojo-oscuro);
+  --bs-btn-hover-border-color: var(--siman-rojo-oscuro);
+  --bs-btn-hover-color: white;
+  border-radius: 8px;
+}
+
+/* Titulos de seccion */
+.titulo-seccion {
+  color: var(--siman-rojo);
+  border-bottom: 3px solid var(--siman-dorado);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: transform .25s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.precio-antes {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.precio-ahora {
+  color: var(--siman-rojo);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Tabla */
+.table-siman th {
+  background-color: var(--siman-negro);
+  color: white;
+}
+
+/* Formulario */
+.caja-formulario {
+  background-color: white;
+  border-top: 5px solid var(--siman-rojo);
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--siman-negro);
+  color: white;
+}
+
+footer a {
+  color: var(--siman-dorado);
+  text-decoration: none;
+}
+
+/* Celular */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2px 6px;
+}

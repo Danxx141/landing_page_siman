@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones Siman</title>
+
+  <!-- Enlace de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-siman sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo-siman.png" alt="Siman" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#suscripcion">Suscríbete</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-center py-5">
+    <div class="container py-4">
+      <h1 class="display-4">¡Las mejores ofertas de El Salvador!</h1>
+      <p class="lead">Descuentos de hasta 50% en moda, tecnología y hogar. Solo por tiempo limitado.</p>
+      <a href="promociones.html" class="btn btn-siman btn-lg me-2 mb-2">Ver promociones</a>
+      <a href="#suscripcion" class="btn btn-outline-light btn-lg mb-2">Suscribirme</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Carrusel -->
+    <section class="container my-5">
+      <div id="ofertas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="img/banner1.svg" class="d-block w-100" alt="Hasta 50% de descuento en moda">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.svg" class="d-block w-100" alt="Semana de tecnología">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.svg" class="d-block w-100" alt="Descuentos para el hogar">
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#ofertas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#ofertas" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Area de Promociones -->
+    <section class="container my-5">
+      <h2 class="titulo-seccion mb-4">Promociones destacadas</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/moda.svg" class="card-img-top" alt="Moda">
+            <div class="card-body">
+              <span class="badge text-bg-danger mb-2">-40%</span>
+              <h3 class="h5">Moda para toda la familia</h3>
+              <p>Blusas, camisas, jeans y vestidos con precios especiales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/tecnologia.svg" class="card-img-top" alt="Tecnología">
+            <div class="card-body">
+              <span class="badge text-bg-danger mb-2">-30%</span>
+              <h3 class="h5">Tecnología</h3>
+              <p>Celulares, laptops y pantallas con hasta 12 cuotas sin intereses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/hogar.svg" class="card-img-top" alt="Hogar">
+            <div class="card-body">
+              <span class="badge text-bg-danger mb-2">-25%</span>
+              <h3 class="h5">Hogar</h3>
+              <p>Renueva tu casa con muebles, cocina y decoración.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="promociones.html" class="btn btn-rojo">Ver todas las promociones</a>
+      </div>
+    </section>
+
+    <!-- Area de por que comprar -->
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-12 col-md-4">
+            <i class="bi bi-truck fs-1 text-danger"></i>
+            <h3 class="h5 mt-2">Envío gratis</h3>
+            <p>En compras mayores a $50 en todo el país.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <i class="bi bi-credit-card fs-1 text-danger"></i>
+            <h3 class="h5 mt-2">Cuotas sin intereses</h3>
+            <p>Paga en cuotas con tus tarjetas favoritas.</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <i class="bi bi-arrow-repeat fs-1 text-danger"></i>
+            <h3 class="h5 mt-2">Cambios fáciles</h3>
+            <p>Tienes 30 días para cambiar tu producto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de suscripcion -->
+    <section id="suscripcion" class="container my-5">
+      <div class="row">
+        <div class="col-12 col-lg-6 mx-auto">
+          <div class="caja-formulario shadow p-4">
+            <h2 class="text-center">Suscríbete</h2>
+            <p class="text-center">Recibe primero nuestras ofertas y eventos exclusivos.</p>
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" required>
+              </div>
+              <div class="mb-3">
+                <label for="interes" class="form-label">¿Qué te interesa más?</label>
+                <select class="form-select" id="interes">
+                  <option>Moda</option>
+                  <option>Tecnología</option>
+                  <option>Hogar</option>
+                  <option>Belleza</option>
+                </select>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="acepto" required>
+                <label class="form-check-label" for="acepto">Acepto recibir correos de Siman</label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-siman">Quiero mis ofertas</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-2">
+        <a href="https://www.facebook.com/simanelsalvador"><i class="bi bi-facebook fs-4 me-3"></i></a>
+        <a href="https://www.instagram.com/almacenessiman_sv/"><i class="bi bi-instagram fs-4 me-3"></i></a>
+        <a href="https://www.tiktok.com/@siman_sv?lang=es-419"><i class="bi bi-tiktok fs-4"></i></a>
+      </p>
+      <p class="mb-0">© 2026 Siman El Salvador - Proyecto de Curso de Frontend Kodigo</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
